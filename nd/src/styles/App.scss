@@ -76,22 +76,61 @@ header a:hover {
 
 // How It Works
 
+.h2-content {
+  margin: 0;
+  font-size: 90px;
+  text-align: center;
+}
+
 #hiw {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   width: auto;
   height: 550px;
   color: white;
 
-  background-image: url("../img/5d-room.png");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/5d-move.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
 }
 
-#hiw h2 {
-  margin: 0;
-  font-size: 80px;
-  text-align: center;
+.lm {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.content-description {
+  color: white;
+  background-color: #050505;
+  padding: 40px;
+  font-size: 30px;
+}
+
+// Prices
+
+#prs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
+  height: 550px;
+  color: white;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
+    url("../img/5d-move-circle.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
 }
 
 // ***
@@ -105,4 +144,12 @@ footer {
   padding: 50px;
   width: auto;
   margin: auto;
+}
+
+// too huge body - fixed
+@media screen and (min-width: 1400px) {
+  body {
+    width: 1400px;
+    margin: auto;
+  }
 }

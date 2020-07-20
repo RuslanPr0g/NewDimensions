@@ -81,21 +81,75 @@ header a:hover {
   }
 }
 
+.h2-content {
+  margin: 0;
+  font-size: 90px;
+  text-align: center;
+}
+
 #hiw {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: auto;
   height: 550px;
   color: white;
-  background-image: url("../img/5d-room.png");
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../img/5d-move.gif");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/5d-move.gif");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #464646;
 }
 
-#hiw h2 {
-  margin: 0;
-  font-size: 80px;
-  text-align: center;
+.lm {
+  color: white;
+  background-color: black;
+  border: 2px solid white;
+  padding: 20px 30px;
+  margin-top: 30px;
+}
+
+.content-description {
+  color: white;
+  background-color: #050505;
+  padding: 40px;
+  font-size: 30px;
+}
+
+#prs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  height: 550px;
+  color: white;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.9))), url("../img/5d-move-circle.gif");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url("../img/5d-move-circle.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
 }
 
 main {
@@ -107,5 +161,12 @@ footer {
   padding: 50px;
   width: auto;
   margin: auto;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    width: 1400px;
+    margin: auto;
+  }
 }
 /*# sourceMappingURL=App.css.map */
