@@ -108,11 +108,9 @@ function App() {
                 <p>
                   Almost the same as the 8D one, but the 10th dimension is the
                   expensiest price, because of there are a few nano-bots which
-                  can work with the 10D, the 10D requires lots of resourses +
-                  patience. But at the same time, the 10D can be expanded in the
-                  future, while the lesser dimensions are not. Free delivery.
-                  Free special key. Advanced nano-bots. 10D can be expanded to
-                  20D+.
+                  can work with the 10D. The 10D can be expanded in the
+                  future, while the lesser dimensions cannot. Free delivery.
+                  Free special key. Advanced nano-bots.
                 </p>
               </div>
               <div className="price-column-bottom">
