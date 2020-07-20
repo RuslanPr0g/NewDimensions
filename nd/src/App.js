@@ -136,7 +136,7 @@ function App() {
           </div>
         </div>
       </main>
-      <footer>footer</footer>
+      <footer id="supp">footer</footer>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
 * {
   font-family: "Oswald", sans-serif;
 }
@@ -171,7 +172,7 @@ header a:hover {
   background-color: white;
   width: 90%;
   border: 3px solid gray;
-  height: 700px;
+  height: 750px;
   margin: 10px 5px;
 }
 
@@ -190,6 +191,7 @@ header a:hover {
 }
 
 .price-column-top {
+  font-family: "Roboto Condensed", "Oswald", sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,8 +227,8 @@ header a:hover {
 }
 
 .price-column-decription {
-  padding: 5px;
-  font-size: 20px;
+  padding: 10px;
+  font-size: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,6 +238,38 @@ header a:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.price-column-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.price-column-bottom button {
+  background-color: black;
+  font-size: 20px;
+  border: 2px solid;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  -webkit-transition: 200ms;
+  transition: 200ms;
+}
+
+.price-column-bottom button:hover {
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
 
 .basic {
