@@ -59,21 +59,6 @@ header a:hover {
   width: 280px;
 }
 
-/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-@media screen and (max-width: 800px) {
-  header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  header {
-    display: block;
-  }
-  header .header-right {
-    margin-top: 30px;
-  }
-}
-
 // How It Works
 
 .h2-content {
@@ -133,6 +118,106 @@ header a:hover {
   background-color: #464646;
 }
 
+#discover {
+  height: auto;
+  width: auto;
+  background-color: black;
+  padding: 30px 20px;
+}
+
+.price-columns {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.price-column {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  border: 3px solid gray;
+  height: 700px;
+  margin: 10px 5px;
+}
+
+.hot-column {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 90%;
+  border: 3px solid orange;
+  height: 800px;
+}
+
+.price-column-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  height: 200px;
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.price-column-amount {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hot-amount {
+  font-size: 40px;
+  color: rgba(255, 166, 0, 0.829);
+}
+
+.price-column-decription {
+  padding: 5px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.basic {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/price-basic.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.hot {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/price-hot.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.plus {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/price-plus.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.advanced {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/price-advanced.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
 // ***
 
 main {
@@ -151,5 +236,24 @@ footer {
   body {
     width: 1400px;
     margin: auto;
+  }
+}
+
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 800px) {
+  header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  header {
+    display: block;
+  }
+  header .header-right {
+    margin-top: 30px;
+  }
+  .price-columns {
+    display: flex;
+    flex-direction: column;
   }
 }

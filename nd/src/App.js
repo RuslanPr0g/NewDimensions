@@ -70,7 +70,71 @@ function App() {
             Discover
           </a>
         </div>
-        <div id="discover"></div>
+        <div id="discover">
+          <div className="price-columns">
+            <div className="price-column">
+              <div className="price-column-top basic">5D (BASIC)</div>
+              <div className="price-column-amount">10,000$</div>
+              <div className="price-column-decription">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
+                  aliquid temporibus esse fuga quas soluta dolores eum
+                  aspernatur, nobis nihil similique?
+                </p>
+              </div>
+              <div className="price-column-bottom">
+                <button>BUY</button>
+              </div>
+            </div>
+
+            <div className="price-column hot-column">
+              <div className="price-column-top hot">6D (HOT!)</div>
+              <div className="price-column-amount hot-amount">30,000$</div>
+              <div className="price-column-decription">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
+                  aliquid temporibus esse fuga quas soluta dolores eum
+                  aspernatur, nobis nihil similique?
+                </p>
+              </div>
+              <div className="price-column-bottom">
+                <button>BUY</button>
+              </div>
+            </div>
+            <div className="price-column">
+              <div className="price-column-top plus">8D (PLUS+)</div>
+              <div className="price-column-amount">50,000$</div>
+              <div className="price-column-decription">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
+                  aliquid temporibus esse fuga quas soluta dolores eum
+                  aspernatur, nobis nihil similique?
+                </p>
+              </div>
+              <div className="price-column-bottom">
+                <button>BUY</button>
+              </div>
+            </div>
+            <div className="price-column">
+              <div className="price-column-top advanced">10D (ADVANCED)</div>
+              <div className="price-column-amount">200,000$</div>
+              <div className="price-column-decription">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
+                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
+                  aliquid temporibus esse fuga quas soluta dolores eum
+                  aspernatur, nobis nihil similique?
+                </p>
+              </div>
+              <div className="price-column-bottom">
+                <button>BUY</button>
+              </div>
+            </div>
+          </div>
+        </div>
       </main>
       <footer>footer</footer>
     </div>
