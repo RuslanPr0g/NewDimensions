@@ -4,20 +4,24 @@ import logo from "./img/ND-logo.png";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="top">
       <header>
         <div className="header-logo">
           <img src={logo} alt="ND" className="logo-img" />
           <h1>New Dimensions</h1>
         </div>
         <div className="header-right">
-          <a href="#">How it works</a>
-          <a href="#">Prices</a>
-          <a href="#">Support</a>
+          <a href="#hiw">How it works</a>
+          <a href="#prs">Prices</a>
+          <a href="#supp">Support</a>
         </div>
       </header>
-      <main>Content</main>
-      <footer>Footer</footer>
+      <main>
+        <div id="hiw">
+          <h2>How It Works</h2>
+        </div>
+      </main>
+      <footer>footer</footer>
     </div>
   );
 }
