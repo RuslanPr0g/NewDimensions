@@ -245,6 +245,31 @@ header a:hover {
   background-color: #464646;
 }
 
+// footer
+
+footer {
+  color: white;
+  background-color: black;
+  border-top: 5px dashed white;
+  height: 600px;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+    url("../img/ball-rotate.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+}
+
 // ***
 
 main {
@@ -252,10 +277,40 @@ main {
   margin: auto;
 }
 
+p {
+  text-align: center;
+}
+
 footer {
   padding: 50px;
   width: auto;
   margin: auto;
+}
+
+.cwu {
+  font-size: 50px;
+}
+
+.phone {
+  font-size: 40px;
+}
+
+.email {
+  font-size: 30px;
+}
+
+.github {
+  height: 40px;
+  font-size: 20px;
+
+  position: sticky;
+  bottom: 100px;
+}
+
+#gh {
+  color: white;
+  float: none;
+  font-size: 25px;
 }
 
 // too huge body - fixed

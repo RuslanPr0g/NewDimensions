@@ -25,43 +25,21 @@ function App() {
         </div>
         <div id="hiw-description" className="content-description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac
-            aliquam ex. Nunc sit amet sollicitudin urna. Pellentesque eget
-            pretium quam, sit amet feugiat ipsum. In id libero eleifend, finibus
-            libero efficitur, placerat orci. Mauris finibus tortor viverra,
-            malesuada risus sed, aliquam ex. Vivamus nec posuere lorem, viverra
-            euismod massa. Nam ut dui tortor. Donec vestibulum hendrerit nulla,
-            quis sagittis lacus mattis et. Etiam laoreet erat nec convallis
-            tempor. In nec orci sed mauris molestie efficitur sed ut velit.
-            Etiam euismod dui ut pretium elementum. Aenean ac tristique felis,
-            ac tristique eros. Nullam velit nisl, venenatis at magna quis,
-            ullamcorper congue enim. Sed vel ante vehicula, volutpat leo vel,
-            rhoncus orci. Sed mollis purus at mi venenatis posuere. Integer at
-            est nisl. Donec laoreet condimentum odio non varius. Nam blandit
-            risus maximus lectus suscipit, id interdum dolor euismod. Fusce
-            viverra pulvinar ex sed pharetra. Quisque sagittis felis eget dui
-            elementum, id aliquet enim porta. Ut molestie at eros non aliquet.
-            Quisque non blandit quam. Mauris ultrices dui nec orci semper, id
-            molestie libero porta. Quisque ultrices condimentum luctus. Praesent
-            enim risus, dapibus a consectetur nec, interdum in nulla. Quisque
-            mollis odio a neque vehicula, nec rhoncus enim commodo. Mauris
-            ornare, urna a bibendum molestie, felis arcu varius nisl, non
-            accumsan ipsum arcu vel elit. Nullam et metus porttitor urna dictum
-            faucibus. Phasellus ultricies quis tortor sed commodo. Duis rhoncus
-            iaculis accumsan. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Aenean sollicitudin tellus lectus, eu placerat eros malesuada
-            eu. Donec a neque sapien. Etiam fringilla gravida pretium. Nulla nec
-            sodales elit. Nulla vehicula gravida ligula vitae placerat.
-            Suspendisse a ante ut augue tincidunt ultricies a in risus. Donec at
-            bibendum urna, vitae ullamcorper urna. Ut venenatis sodales nunc
-            auctor varius. Maecenas consectetur id metus vel tempus. Phasellus
-            sem justo, elementum eu ultricies eu, pharetra sed erat. Maecenas
-            nec lectus eget eros lobortis rhoncus nec nec augue. Quisque blandit
-            nulla ac dolor iaculis congue. Cras sed purus varius, pharetra
-            lectus mattis, tempus lacus. Proin a tempor libero, eget hendrerit
-            nisi. Morbi tincidunt dui dui, quis porta nunc molestie vel. Integer
-            tincidunt felis id varius condimentum. Morbi lacinia ultrices orci
-            tempus elementum. Fusce rhoncus fermentum pretium.
+            Using the 5th+ dimensions, we can add extra space to your room. For
+            instance, if your flat has 12m<sup>2</sup> we can add 30 more m
+            <sup>2</sup>, or using 8D and greater you can get even 70m
+            <sup>3</sup>+!. Our technology uses the parallel universe structure
+            to connect the 4D world with greater dimensions. Everybody knows,
+            that in 3031 scientists from North America, all of a sudden,
+            discovered a new material called "DarkM", and since this time people
+            can see the 4th dimension (they used to 3rd), and now, using this,
+            the scientists can connect different dimensions together, and they
+            provide this material to us.
+            <hr />
+            We clear your wall from wallpapers, them using nano-bots made with
+            DarkM, we create kind of black hole which takes the part of a wall
+            inside of self and absolutely empty room will show up, after that we
+            give you a special key, with which you can set up the room.
           </p>
         </div>
         <div id="prs">
@@ -74,13 +52,13 @@ function App() {
           <div className="price-columns">
             <div className="price-column">
               <div className="price-column-top basic">5D (BASIC)</div>
-              <div className="price-column-amount">10,000$</div>
+              <div className="price-column-amount">
+                10,000$ / 10m<sup>2</sup>
+              </div>
               <div className="price-column-decription">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
-                  aliquid temporibus esse fuga quas soluta dolores eum
-                  aspernatur, nobis nihil similique?
+                  Extra 10m<sup>2</sup> to your space, using 5D. The cheapest
+                  price, but not the best one. Free delivery.
                 </p>
               </div>
               <div className="price-column-bottom">
@@ -90,13 +68,14 @@ function App() {
 
             <div className="price-column hot-column">
               <div className="price-column-top hot">6D (HOT!)</div>
-              <div className="price-column-amount hot-amount">30,000$</div>
+              <div className="price-column-amount hot-amount">
+                30,000$ / 30m<sup>2</sup>
+              </div>
               <div className="price-column-decription">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
-                  aliquid temporibus esse fuga quas soluta dolores eum
-                  aspernatur, nobis nihil similique?
+                  The best price = the best quality. This is HOT price, which
+                  means, that a tons of people already uses this variant and
+                  likes this a lot! Free delivery. Free special key.
                 </p>
               </div>
               <div className="price-column-bottom">
@@ -105,13 +84,15 @@ function App() {
             </div>
             <div className="price-column">
               <div className="price-column-top plus">8D (PLUS+)</div>
-              <div className="price-column-amount">50,000$</div>
+              <div className="price-column-amount">
+                50,000$ / 70m<sup>3</sup>
+              </div>
               <div className="price-column-decription">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
-                  aliquid temporibus esse fuga quas soluta dolores eum
-                  aspernatur, nobis nihil similique?
+                  Using advanced the 7D+8D technology we can add a lot of free
+                  space to your room. This is the expensive price and the
+                  quality one too! Free delivery. Free special key. Advanced
+                  nano-bots.
                 </p>
               </div>
               <div className="price-column-bottom">
@@ -120,13 +101,18 @@ function App() {
             </div>
             <div className="price-column">
               <div className="price-column-top advanced">10D (ADVANCED)</div>
-              <div className="price-column-amount">200,000$</div>
+              <div className="price-column-amount">
+                200,000$ / 100m<sup>5</sup>
+              </div>
               <div className="price-column-decription">
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus
-                  nostrum eos, beatae a repudiandae odio laboriosam eaque, quia
-                  aliquid temporibus esse fuga quas soluta dolores eum
-                  aspernatur, nobis nihil similique?
+                  Almost the same as the 8D one, but the 10th dimension is the
+                  expensiest price, because of there are a few nano-bots which
+                  can work with the 10D, the 10D requires lots of resourses +
+                  patience. But at the same time, the 10D can be expanded in the
+                  future, while the lesser dimensions are not. Free delivery.
+                  Free special key. Advanced nano-bots. 10D can be expanded to
+                  20D+.
                 </p>
               </div>
               <div className="price-column-bottom">
@@ -136,7 +122,29 @@ function App() {
           </div>
         </div>
       </main>
-      <footer id="supp">footer</footer>
+      <footer id="supp">
+        <div className="main">
+          <div className="info">
+            <h2 className="cwu">New Dimensions contact with us:</h2>
+            <p className="phone">+40992121999</p>
+            <p className="email">thend@ggmail.com</p>
+          </div>
+        </div>
+        <div className="extra">
+          <div className="github">
+            <p>
+              Also Check Out creator's{" "}
+              <a
+                href="https://github.com/RuslanPr0g/NewDimensions"
+                target="_blank"
+                id="gh"
+              >
+                github
+              </a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

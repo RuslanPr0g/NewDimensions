@@ -308,15 +308,76 @@ header a:hover {
   background-color: #464646;
 }
 
+footer {
+  color: white;
+  background-color: black;
+  border-top: 5px dashed white;
+  height: 600px;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.8))), url("../img/ball-rotate.gif");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), url("../img/ball-rotate.gif");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  height: auto;
+}
+
 main {
   width: auto;
   margin: auto;
+}
+
+p {
+  text-align: center;
 }
 
 footer {
   padding: 50px;
   width: auto;
   margin: auto;
+}
+
+.cwu {
+  font-size: 50px;
+}
+
+.phone {
+  font-size: 40px;
+}
+
+.email {
+  font-size: 30px;
+}
+
+.github {
+  height: 40px;
+  font-size: 20px;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 100px;
+}
+
+#gh {
+  color: white;
+  float: none;
+  font-size: 25px;
 }
 
 @media screen and (min-width: 1400px) {
