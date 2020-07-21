@@ -63,7 +63,7 @@ a {
 
 .header-logo {
   display: flex;
-  @include flex_row();
+  @include flex_direction(row);
 
   width: 280px;
 }
@@ -79,7 +79,7 @@ a {
 #hiw {
   display: flex;
   @include flex_cntr();
-  @include flex_clmn();
+  @include flex_direction(column);
 
   width: auto;
   height: 550px;
@@ -110,7 +110,7 @@ a {
 #prs {
   display: flex;
   @include flex_cntr();
-  @include flex_clmn();
+  @include flex_direction(column);
 
   width: auto;
   height: 550px;
@@ -131,7 +131,7 @@ a {
 .price-columns {
   display: flex;
 
-  @include flex_row();
+  @include flex_direction(row);
   @include flex_btw();
 
   align-items: center;
@@ -140,7 +140,7 @@ a {
 .price-column {
   display: flex;
 
-  @include flex_clmn();
+  @include flex_direction(column);
   @include flex_btw();
 
   background-color: white;
@@ -256,7 +256,7 @@ footer {
   display: flex;
 
   @include flex_cntr();
-  @include flex_row();
+  @include flex_direction(row);
 
   width: auto;
   height: auto;
