@@ -62,7 +62,7 @@ function App() {
                 </p>
               </div>
               <div className="price-column-bottom">
-                <button>BUY</button>
+                <button>GET</button>
               </div>
             </div>
 
@@ -79,7 +79,7 @@ function App() {
                 </p>
               </div>
               <div className="price-column-bottom">
-                <button>BUY</button>
+                <button>GET</button>
               </div>
             </div>
             <div className="price-column">
@@ -96,7 +96,7 @@ function App() {
                 </p>
               </div>
               <div className="price-column-bottom">
-                <button>BUY</button>
+                <button>GET</button>
               </div>
             </div>
             <div className="price-column">
@@ -114,7 +114,7 @@ function App() {
                 </p>
               </div>
               <div className="price-column-bottom">
-                <button>BUY</button>
+                <button>GET</button>
               </div>
             </div>
           </div>
