@@ -1,29 +1,20 @@
 import React from "react";
 import "./styles/App.css";
-import logo from "./img/ND-logo.png";
+
+import Layout from "./components/Layout/Layout";
+
+import ContentBlock from "./components/ContentBlock/ContentBlock";
 
 function App() {
   return (
     <div className="App" id="top">
-      <header>
-        <div className="header-logo">
-          <img src={logo} alt="ND" className="logo-img" />
-          <h1>New Dimensions</h1>
-        </div>
-        <div className="header-right">
-          <a href="#hiw">How it works</a>
-          <a href="#prs">Prices</a>
-          <a href="#supp">Support</a>
-        </div>
-      </header>
-      <main>
-        <div id="hiw">
-          <h2 className="h2-content">How It Works</h2>
-          <a href="#hiw-description" className="lm">
-            Learn More
-          </a>
-        </div>
-        <div id="hiw-description" className="content-description">
+      <Layout>
+        <ContentBlock
+          title="How It Works"
+          button_text="Learn More"
+          main_id="hiw"
+          desc_id="hiw-description"
+        >
           <p>
             Using the 5th+ dimensions, we can add extra space to your room. For
             instance, if your flat has 12m<sup>2</sup> we can add 30 more m
@@ -43,14 +34,13 @@ function App() {
             inside of self and absolutely empty room will show up, after that we
             give you a special key, with which you can set up the room.
           </p>
-        </div>
-        <div id="prs">
-          <h2 className="h2-content">Prices</h2>
-          <a href="#discover" className="lm">
-            Discover
-          </a>
-        </div>
-        <div id="discover">
+        </ContentBlock>
+        <ContentBlock
+          title="Prices"
+          button_text="Discover"
+          main_id="prs"
+          desc_id="discover"
+        >
           <div className="price-columns">
             <div className="price-column">
               <div className="price-column-top basic">5D (BASIC)</div>
@@ -67,7 +57,6 @@ function App() {
                 <button>GET</button>
               </div>
             </div>
-
             <div className="price-column hot-column">
               <div className="price-column-top hot">6D (HOT!)</div>
               <div className="price-column-amount hot-amount">
@@ -120,32 +109,8 @@ function App() {
               </div>
             </div>
           </div>
-        </div>
-      </main>
-      <footer id="supp">
-        <div className="main">
-          <div className="info">
-            <h2 className="cwu">New Dimensions contact with us:</h2>
-            <p className="phone">+40992121999</p>
-            <p className="email">thend@ggmail.com</p>
-          </div>
-        </div>
-        <div className="extra">
-          <div className="github">
-            <p>
-              Also Check Out creator's{" "}
-              <a
-                href="https://github.com/RuslanPr0g/NewDimensions"
-                target="_blank"
-                id="gh"
-                rel="noopener noreferrer"
-              >
-                github
-              </a>
-            </p>
-          </div>
-        </div>
-      </footer>
+        </ContentBlock>
+      </Layout>
     </div>
   );
 }

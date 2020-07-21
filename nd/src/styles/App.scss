@@ -94,6 +94,10 @@ a {
   @include image_style();
 }
 
+.top-desc {
+  font-size: 35px;
+}
+
 .lm {
   color: white;
   background-color: black;
@@ -142,6 +146,7 @@ a {
   @include flex_btw();
 
   background-color: white;
+  color: black;
   width: 90%;
   border: 3px solid gray;
   height: 750px;

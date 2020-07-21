@@ -98,6 +98,10 @@ a {
   background-color: #464646;
 }
 
+.top-desc {
+  font-size: 35px;
+}
+
 .lm {
   color: white;
   background-color: black;
@@ -173,6 +177,7 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: white;
+  color: black;
   width: 90%;
   border: 3px solid gray;
   height: 750px;
