@@ -1,4 +1,8 @@
-$overlay_color: rgba(0, 0, 0, 0.5);
+@import "./variables";
+
+@import "./flex";
+
+@import "./image";
 
 // MAIN CODE:
 
@@ -25,11 +29,19 @@ h1 {
 
 header {
   display: flex;
-  justify-content: space-between;
+  @include flex_btw();
+
   margin: auto;
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
+  a {
+    transition: 100ms;
+    &:hover {
+      background-color: #ddd;
+      color: black;
+    }
+  }
 }
 
 a {
@@ -44,15 +56,6 @@ a {
   text-transform: uppercase;
 }
 
-header a {
-  transition: 100ms;
-}
-
-header a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
 .logo-img {
   width: 50px;
   height: 50px;
@@ -60,7 +63,8 @@ header a:hover {
 
 .header-logo {
   display: flex;
-  flex-direction: row;
+  @include flex_row();
+
   width: 280px;
 }
 
@@ -74,19 +78,16 @@ header a:hover {
 
 #hiw {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex_cntr();
+  @include flex_clmn();
+
   width: auto;
   height: 550px;
   color: white;
 
   background: linear-gradient(0deg, $overlay_color, $overlay_color),
     url("../img/5d-move.gif");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+  @include image_style();
 }
 
 .lm {
@@ -108,19 +109,16 @@ header a:hover {
 
 #prs {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  @include flex_cntr();
+  @include flex_clmn();
+
   width: auto;
   height: 550px;
   color: white;
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url("../img/5d-move-circle.gif");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+  @include image_style();
 }
 
 #discover {
@@ -132,15 +130,19 @@ header a:hover {
 
 .price-columns {
   display: flex;
+
+  @include flex_row();
+  @include flex_btw();
+
   align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .price-column {
   display: flex;
-  justify-content: space-between;
-  flex-direction: column;
+
+  @include flex_clmn();
+  @include flex_btw();
+
   background-color: white;
   width: 90%;
   border: 3px solid gray;
@@ -158,8 +160,9 @@ header a:hover {
 .price-column-top {
   font-family: "Roboto Condensed", "Oswald", sans-serif;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @include flex_cntr();
+
   color: white;
   height: 200px;
   text-align: center;
@@ -170,8 +173,8 @@ header a:hover {
 .price-column-amount {
   font-size: 30px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @include flex_cntr();
 }
 
 .hot-amount {
@@ -183,69 +186,57 @@ header a:hover {
   padding: 10px;
   font-size: 25px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  @include flex_cntr();
 }
 
 .price-column-bottom {
   display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.price-column-bottom button {
-  background-color: black;
-  font-size: 20px;
-  border: 2px solid;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  transition: 200ms;
-}
+  @include flex_cntr();
 
-.price-column-bottom button:hover {
-  cursor: pointer;
-  background-color: white;
-  color: black;
-  border: 2px solid black;
+  button {
+    background-color: black;
+    font-size: 20px;
+    border: 2px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: 200ms;
+    &:hover {
+      cursor: pointer;
+      background-color: white;
+      color: black;
+      border: 2px solid black;
+    }
+  }
 }
 
 .basic {
   background: linear-gradient(0deg, $overlay_color, $overlay_color),
     url("../img/price-basic.jpg");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+
+  @include image_style();
 }
 
 .hot {
   background: linear-gradient(0deg, $overlay_color, $overlay_color),
     url("../img/price-hot.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+  @include image_style();
 }
 
 .plus {
   background: linear-gradient(0deg, $overlay_color, $overlay_color),
     url("../img/price-plus.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+  @include image_style();
 }
 
 .advanced {
   background: linear-gradient(0deg, $overlay_color, $overlay_color),
     url("../img/price-advanced.png");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+  @include image_style();
 }
 
 // footer
@@ -258,17 +249,15 @@ footer {
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
     url("../img/ball-rotate.gif");
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-color: #464646;
+  @include image_style();
 }
 
 .main {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
+
+  @include flex_cntr();
+  @include flex_row();
+
   width: auto;
   height: auto;
 }
@@ -305,7 +294,6 @@ footer {
 .github {
   height: 40px;
   font-size: 20px;
-
   position: sticky;
   bottom: 100px;
 }
@@ -328,16 +316,16 @@ footer {
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 800px) {
-  header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
   header {
     display: block;
-  }
-  header .header-right {
-    margin-top: 30px;
+    a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    .header-right {
+      margin-top: 30px;
+    }
   }
   .price-columns {
     display: flex;
