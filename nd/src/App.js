@@ -4,8 +4,48 @@ import "./styles/App.css";
 import Layout from "./components/Layout/Layout";
 
 import ContentBlock from "./components/ContentBlock/ContentBlock";
+import PriceBlock from "./components/PriceBlock/PriceBlock";
 
 function App() {
+  let prices = [
+    {
+      col_style: "price-column",
+      typ_style: "price-column-top basic",
+      top_title: "5D (BASIC)",
+      amount: "10,000$ / 10m2",
+      btn_text: "GET",
+      desc:
+        "Extra 10m<sup>2</sup> to your space, using 5D. The cheapest price, but not the best one. Free delivery.",
+    },
+    {
+      col_style: "price-column hot-column",
+      typ_style: "price-column-top hot",
+      top_title: "6D (HOT!)",
+      amount: "30,000$ / 30m2",
+      btn_text: "GET",
+      desc:
+        "The best price = the best quality. This is HOT price, which means, that a tons of people already uses this variant and likes this a lot! Free delivery. Free special key.",
+    },
+    {
+      col_style: "price-column",
+      typ_style: "price-column-top plus",
+      top_title: "8D (PLUS+)",
+      amount: "50,000$ / 70m3",
+      btn_text: "GET",
+      desc:
+        "Using advanced the 7D+8D technology we can add a lot of free space to your room. This is the expensive price and the quality one too! Free delivery. Free special key. Advanced nano-bots.",
+    },
+    {
+      col_style: "price-column",
+      typ_style: "price-column-top advanced",
+      top_title: "10D (ADVANCED)",
+      amount: "200,000$ / 100m5",
+      btn_text: "GET",
+      desc:
+        "Almost the same as the 8D one, but the 10th dimension is the expensiest price, because of there are a few nano-bots which can work with the 10D. The 10D can be expanded in the future, while the lesser dimensions cannot. Free delivery. Free special key. Advanced nano-bots.",
+    },
+  ];
+
   return (
     <div className="App" id="top">
       <Layout>
@@ -42,72 +82,59 @@ function App() {
           desc_id="discover"
         >
           <div className="price-columns">
-            <div className="price-column">
-              <div className="price-column-top basic">5D (BASIC)</div>
-              <div className="price-column-amount">
-                10,000$ / 10m<sup>2</sup>
-              </div>
-              <div className="price-column-decription">
-                <p>
-                  Extra 10m<sup>2</sup> to your space, using 5D. The cheapest
-                  price, but not the best one. Free delivery.
-                </p>
-              </div>
-              <div className="price-column-bottom">
-                <button>GET</button>
-              </div>
-            </div>
-            <div className="price-column hot-column">
-              <div className="price-column-top hot">6D (HOT!)</div>
-              <div className="price-column-amount hot-amount">
-                30,000$ / 30m<sup>2</sup>
-              </div>
-              <div className="price-column-decription">
-                <p>
-                  The best price = the best quality. This is HOT price, which
-                  means, that a tons of people already uses this variant and
-                  likes this a lot! Free delivery. Free special key.
-                </p>
-              </div>
-              <div className="price-column-bottom">
-                <button>GET</button>
-              </div>
-            </div>
-            <div className="price-column">
-              <div className="price-column-top plus">8D (PLUS+)</div>
-              <div className="price-column-amount">
-                50,000$ / 70m<sup>3</sup>
-              </div>
-              <div className="price-column-decription">
-                <p>
-                  Using advanced the 7D+8D technology we can add a lot of free
-                  space to your room. This is the expensive price and the
-                  quality one too! Free delivery. Free special key. Advanced
-                  nano-bots.
-                </p>
-              </div>
-              <div className="price-column-bottom">
-                <button>GET</button>
-              </div>
-            </div>
-            <div className="price-column">
-              <div className="price-column-top advanced">10D (ADVANCED)</div>
-              <div className="price-column-amount">
-                200,000$ / 100m<sup>5</sup>
-              </div>
-              <div className="price-column-decription">
-                <p>
-                  Almost the same as the 8D one, but the 10th dimension is the
-                  expensiest price, because of there are a few nano-bots which
-                  can work with the 10D. The 10D can be expanded in the future,
-                  while the lesser dimensions cannot. Free delivery. Free
-                  special key. Advanced nano-bots.
-                </p>
-              </div>
-              <div className="price-column-bottom">
-                <button>GET</button>
-              </div>
-            </div>
+            <PriceBlock
+              col_style="price-column"
+              top_style="price-column-top basic"
+              top_title="5D (BASIC)"
+              amount="10,000$ / 10m2"
+              btn_text="GET"
+            >
+              <p>
+                Extra 10m<sup>2</sup> to your space, using 5D. The cheapest
+                price, but not the best one. Free delivery.
+              </p>
+            </PriceBlock>
+            <PriceBlock
+              col_style="price-column hot-column"
+              top_style="price-column-top hot"
+              top_title="6D (HOT!)"
+              amount="30,000$ / 30m2"
+              btn_text="GET"
+            >
+              <p>
+                The best price = the best quality. This is HOT price, which
+                means, that a tons of people already uses this variant and likes
+                this a lot! Free delivery. Free special key.
+              </p>
+            </PriceBlock>
+            <PriceBlock
+              col_style="price-column"
+              top_style="price-column-top plus"
+              top_title="8D (PLUS+)"
+              amount="50,000$ / 70m3"
+              btn_text="GET"
+            >
+              <p>
+                Using advanced the 7D+8D technology we can add a lot of free
+                space to your room. This is the expensive price and the quality
+                one too! Free delivery. Free special key. Advanced nano-bots.
+              </p>
+            </PriceBlock>
+            <PriceBlock
+              col_style="price-column"
+              top_style="price-column-top advanced"
+              top_title="10D (ADVANCED)"
+              amount="200,000$ / 100m5"
+              btn_text="GET"
+            >
+              <p>
+                Almost the same as the 8D one, but the 10th dimension is the
+                expensiest price, because of there are a few nano-bots which can
+                work with the 10D. The 10D can be expanded in the future, while
+                the lesser dimensions cannot. Free delivery. Free special key.
+                Advanced nano-bots.
+              </p>
+            </PriceBlock>
           </div>
         </ContentBlock>
       </Layout>
