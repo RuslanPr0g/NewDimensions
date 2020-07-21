@@ -10,7 +10,7 @@ function App() {
   let prices = [
     {
       col_style: "price-column",
-      typ_style: "price-column-top basic",
+      top_style: "price-column-top basic",
       top_title: "5D (BASIC)",
       amount: "10,000$ / 10m2",
       btn_text: "GET",
@@ -19,7 +19,7 @@ function App() {
     },
     {
       col_style: "price-column hot-column",
-      typ_style: "price-column-top hot",
+      top_style: "price-column-top hot",
       top_title: "6D (HOT!)",
       amount: "30,000$ / 30m2",
       btn_text: "GET",
@@ -28,7 +28,7 @@ function App() {
     },
     {
       col_style: "price-column",
-      typ_style: "price-column-top plus",
+      top_style: "price-column-top plus",
       top_title: "8D (PLUS+)",
       amount: "50,000$ / 70m3",
       btn_text: "GET",
@@ -37,7 +37,7 @@ function App() {
     },
     {
       col_style: "price-column",
-      typ_style: "price-column-top advanced",
+      top_style: "price-column-top advanced",
       top_title: "10D (ADVANCED)",
       amount: "200,000$ / 100m5",
       btn_text: "GET",
@@ -55,6 +55,7 @@ function App() {
         top_title={prices[i].top_title}
         amount={prices[i].amount}
         btn_text={prices[i].btn_text}
+        key={i}
       >
         <p>{prices[i].desc}</p>
       </PriceBlock>
