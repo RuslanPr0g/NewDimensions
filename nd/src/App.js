@@ -34,8 +34,10 @@ function App() {
             discovered a new material called "DarkM", and since this time people
             can see the 4th dimension (they used to 3rd), and now, using this,
             the scientists can connect different dimensions together, and they
-            provide this material to us.
-            <hr />
+            provide this material to us.{" "}
+          </p>
+          <p>
+            {" "}
             We clear your wall from wallpapers, them using nano-bots made with
             DarkM, we create kind of black hole which takes the part of a wall
             inside of self and absolutely empty room will show up, after that we
@@ -108,9 +110,9 @@ function App() {
                 <p>
                   Almost the same as the 8D one, but the 10th dimension is the
                   expensiest price, because of there are a few nano-bots which
-                  can work with the 10D. The 10D can be expanded in the
-                  future, while the lesser dimensions cannot. Free delivery.
-                  Free special key. Advanced nano-bots.
+                  can work with the 10D. The 10D can be expanded in the future,
+                  while the lesser dimensions cannot. Free delivery. Free
+                  special key. Advanced nano-bots.
                 </p>
               </div>
               <div className="price-column-bottom">
@@ -136,6 +138,7 @@ function App() {
                 href="https://github.com/RuslanPr0g/NewDimensions"
                 target="_blank"
                 id="gh"
+                rel="noopener noreferrer"
               >
                 github
               </a>

@@ -165,6 +165,9 @@ header a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -174,19 +177,12 @@ header a:hover {
   border: 3px solid gray;
   height: 750px;
   margin: 10px 5px;
+  padding-bottom: 40px;
 }
 
 .hot-column {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   background-color: white;
-  width: 90%;
-  border: 3px solid orange;
+  border: 5px solid orange;
   height: 800px;
 }
 
@@ -380,9 +376,9 @@ footer {
   font-size: 25px;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 2888px) {
   body {
-    width: 1400px;
+    width: 2888px;
     margin: auto;
   }
 }
