@@ -46,6 +46,21 @@ function App() {
     },
   ];
 
+  let prices_components = [];
+  for (let i = 0; i < prices.length; i++) {
+    prices_components.push(
+      <PriceBlock
+        col_style={prices[i].col_style}
+        top_style={prices[i].top_style}
+        top_title={prices[i].top_title}
+        amount={prices[i].amount}
+        btn_text={prices[i].btn_text}
+      >
+        <p>{prices[i].desc}</p>
+      </PriceBlock>
+    );
+  }
+
   return (
     <div className="App" id="top">
       <Layout>
@@ -81,7 +96,7 @@ function App() {
           main_id="prs"
           desc_id="discover"
         >
-          <div className="price-columns"></div>
+          <div className="price-columns">{prices_components}</div>
         </ContentBlock>
       </Layout>
     </div>
