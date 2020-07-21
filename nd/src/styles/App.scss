@@ -4,6 +4,16 @@
 
 @import "./image";
 
+@mixin content_block {
+  display: flex;
+  @include flex_cntr();
+  @include flex_direction(column);
+
+  width: auto;
+  height: 550px;
+  color: white;
+}
+
 // MAIN CODE:
 
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap");
@@ -77,13 +87,7 @@ a {
 }
 
 #hiw {
-  display: flex;
-  @include flex_cntr();
-  @include flex_direction(column);
-
-  width: auto;
-  height: 550px;
-  color: white;
+  @include content_block();
 
   background: linear-gradient(0deg, $overlay_color, $overlay_color),
     url("../img/5d-move.gif");
@@ -108,13 +112,7 @@ a {
 // Prices
 
 #prs {
-  display: flex;
-  @include flex_cntr();
-  @include flex_direction(column);
-
-  width: auto;
-  height: 550px;
-  color: white;
+  @include content_block();
 
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
     url("../img/5d-move-circle.gif");
