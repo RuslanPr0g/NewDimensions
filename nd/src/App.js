@@ -15,13 +15,13 @@ function App() {
       amount: "10,000$ / 10m2",
       btn_text: "GET",
       desc:
-        "Extra 10m<sup>2</sup> to your space, using 5D. The cheapest price, but not the best one. Free delivery.",
+        "Extra 10m2 to your space, using 5D. The cheapest price, but not the best one. Free delivery.",
     },
     {
       col_style: "price-column hot-column",
       top_style: "price-column-top hot",
       top_title: "6D (HOT!)",
-      amount: "30,000$ / 30m2",
+      amount: "|30,000$ / 30m2",
       btn_text: "GET",
       desc:
         "The best price = the best quality. This is HOT price, which means, that a tons of people already uses this variant and likes this a lot! Free delivery. Free special key.",
@@ -85,7 +85,7 @@ function App() {
           </p>
           <p>
             {" "}
-            We clear your wall from wallpapers, them using nano-bots made with
+            We clear your wall from wallpapers, then using nano-bots made with
             DarkM, we create kind of black hole which takes the part of a wall
             inside of self and absolutely empty room will show up, after that we
             give you a special key, with which you can set up the room.
